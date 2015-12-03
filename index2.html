@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>My-Car_Your-Car</title>
+	<link href="jquery-ui.css" rel="stylesheet">
+	<style>
+	body{
+		font: 62.5% "Trebuchet MS", sans-serif;
+        color: blue
+		margin: 50px;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+         color: blue
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	select {
+		width: 200px;
+	}
+	</style>
+</head>
+<body>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <a href="#" data-toggle="tooltip" title="Are you going where I'm going?"><h1>My-Car/Your-Car</h1></a>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="My-Car/Your-Car"]').tooltip();   
+});
+</script>
+
+	<p><h2>Ride with your friends</h2></p>
+<div class="ui-widget">
+<h2 class="demoHeaders">Your Friend Groups</h2>
+<select id="selectmenu">
+	<option>My Company Only</option>
+	<option>Other Companies like mine</option>
+	<option>My University Only</option>
+	<option>All Other Univerities</option>
+    <option>My Facebook Friends</option>
+    <option>My Google+ Friends</option>
+</select>
+<h2 class="demoHeaders">Your Conditions</h2>
+<select id="selectmenu">
+	<option>I'm here for the conversation</option>
+    <option>Women Only</option>
+    <option> you drive today - I'll drive tomorrow</option>
+	<option>Let's share a cab</option>
+	<option>Music</option>
+</select>
+<h2 class="demoHeaders">Your Destination</h2>
+<select id="selectmenu">
+	<option>Plaza insurgentes</option>
+    <option>Glerias Insurgentes</option>
+    <option>Centro Buenavista</option>
+	<option>World Trade Center</option>
+	<option>Parque Mexico</option>
+    <option>Reforma 222</option>
+    <option>Museo Soumaya</option>
+    <option>Plaza Antara</option>
+    <option>Pabellon Bosques</option>
+    <option>Centro Santa Fe</option>
+    
+</select>
+<h1 class="demoHeaders">RIDERS/DRIVERS</h1>
+<select id="selectmenu">
+	<option>BOBBY V.</option>
+	<option>LINDA SUE S.</option>
+	<option>EDWARD M.</option>
+	
+</select>
+
+
+
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+
+$( "#accordion" ).accordion();
+
+
+
+
+
+
+
+
+
+
+
+$( "#datepicker" ).datepicker({
+	inline: true
+});
+
+
+
+
+
+
+
+
+
+$( "#menu" ).menu();
+
+
+
+$( "#tooltip" ).tooltip();
+
+
+
+$( "#selectmenu" ).selectmenu();
+
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+</body>
+</html>
